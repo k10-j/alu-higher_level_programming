@@ -1,3 +1,6 @@
--- Lists all databases in the MySQL server, sorted alphabetically
-SHOW DATABASES ORDER BY `Database`;
+-- List all databases in MySQL server
+-- Ensure the output is sorted manually
+SELECT schema_name 
+FROM information_schema.schemata 
+ORDER BY schema_name;
 
